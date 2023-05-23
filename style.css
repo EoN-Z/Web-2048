@@ -1,0 +1,129 @@
+body {
+    background-color:#dddddd;
+    text-align: center;
+}
+table {
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+#scoreTable {
+    width: 120px;
+    height: 80px;
+    background-color: #353535;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 30px;
+}
+#scoreText {
+    color: #ffffff;
+    font-size: 20pt;
+    padding: 0px;
+    margin: 0px;
+}
+#score {
+    color: #ffef5e;
+    font-size: 14pt;
+    padding: 0px;
+    margin: 0px;
+}
+
+#resetTable {
+    width: 200px;
+    text-align: right;
+}
+#reset {
+    width: 80px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    border : 1px;
+    color: #ffffff;
+    background: #353535;
+    border-radius: 30px;
+}
+#reset:hover {
+    background: #727272;
+    transition: 0.7s;
+}
+
+#board {
+    background-color: #353535;
+    border-radius: 10px;
+    padding: 5px;
+}
+table#board td {
+    width: 80px;
+    height: 80px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.block0 {
+    background-color: #CDC1B4;
+}
+.block2 {
+    background-color: #EEE4DA;
+    color: #443f3b;
+    font-size: 30pt;
+}
+.block4 {
+    background-color: #EEE1C9;
+    color: #443f3b;
+    font-size: 30pt;
+}
+.block8 {
+    background-color: #F3B27A;
+    color: #FFFFFF;
+    font-size: 30pt;
+}
+.block16 {
+    background-color: #F69664;
+    color: #FFFFFF;
+    font-size: 30pt;
+}
+.block32 {
+    background-color: #F77C5F;
+    color: #FFFFFF;
+    font-size: 30pt;
+}
+.block64 {
+    background-color: #F75F3B;
+    color: #FFFFFF;
+    font-size: 30pt;
+}
+.block128 {
+    background-color: #EDD073;
+    color: #FFFFFF;
+    font-size: 30pt;
+}
+.block256 {
+    background-color: #EDCC62;
+    color: #FFFFFF;
+    font-size: 30pt;
+}
+.block512 {
+    background-color: #EDC950;
+    color: #FFFFFF;
+    font-size: 30pt;
+}
+.block1024 {
+    background-color: #EDC53F;
+    color: #FFFFFF;
+    font-size: 25pt;
+}
+.block2048 {
+    background-color: #EDC22E;
+    color: #FFFFFF;
+    font-size: 25pt;
+}
+.block4096 {
+    background-color: #0054FF;
+    color: #FFFFFF;
+    font-size: 25pt;
+}
+.blockOver {
+    background-color: #000CB7;
+    color: #FFFFFF;
+    font-size: 20pt;
+}
