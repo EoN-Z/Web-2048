@@ -127,3 +127,8 @@ table#board td {
     color: #FFFFFF;
     font-size: 20pt;
 }
+
+#desc {
+    color: #131313;
+    font-size: 10pt;
+}

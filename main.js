@@ -1,5 +1,6 @@
 var board = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]];
 var score = 0;
+var best = 4;
 var moved;
 
 //초기화
@@ -8,6 +9,7 @@ function init() {
         for(var j=0; j<4; j++)
             board[i][j] = 0;
     score = 0;
+    best = 4;
     makeTwo();
     makeTwo();
     draw();
@@ -58,6 +60,13 @@ function push(arr) {
             arr[i] *= 2;
             arr[i+1] = 0;
             score += arr[i];
+            if(arr[i] > best) {
+                best = arr[i];
+                var sound_break = new Audio('./sound/break.mp3');
+                sound_break.play();
+                if(best == 2048)
+                    alert("Win!\n계속 플레이해서 4096 이상을 만든다면?");
+            }
         }
     }
     arr = arr.filter(arr => arr != 0);
